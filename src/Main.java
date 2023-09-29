@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) {;
+    public static void main(String[] args) {
         CarOverload BMW = new CarOverload(1999, 190.9, 500, "White");
         CarOverload lambo = new CarOverload(2017, 280.8, 439);
         CarOverload Gryzovik = new CarOverload(1932, 88);
