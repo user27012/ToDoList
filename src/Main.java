@@ -1,14 +1,18 @@
-public class Main {
+class Main {
     public static void main(String[] args) {
-        Vehicle vehicle1 = new Plane(50.0, 30.0, 2000000.0, 900.0, 2020, 10000.0, 150);
-        Vehicle vehicle2 = new Car(10.0, 20.0, 50000.0, 120.0, 2019, "Toyota");
-        Vehicle vehicle3 = new Ship(5.0, 15.0, 1000000.0, 50.0, 2015, 200, "Miami");
+        Printer printer = new Printer();
+        RedPrinter redPrinter = new RedPrinter();
+        BluePrinter bluePrinter = new BluePrinter();
 
-        System.out.println("Літак:");
-        vehicle1.displayInfo();
-        System.out.println("\nАвтомобіль:");
-        vehicle2.displayInfo();
-        System.out.println("\nКорабель:");
-        vehicle3.displayInfo();
+        printer.print("Звичайний текст");
+        redPrinter.print("Цей текст червоний");
+        bluePrinter.print("Цей текст синій");
+
+        // Використання приведення типів
+        Printer redAsPrinter = (Printer) redPrinter;
+        redAsPrinter.print("Цей текст червоний (приведення до Printer)");
+
+        Printer blueAsPrinter = (Printer) bluePrinter;
+        blueAsPrinter.print("Цей текст синій (приведення до Printer)");
     }
 }
