@@ -5,7 +5,7 @@ public class Main {
         double kelvin = ConverterTemperature.convertCelsiusToKelvin(celsius);
         double fahrenheit = ConverterTemperature.convertCelsiusToFahrenheit(celsius);
 
-        System.out.println(celsius + " Градусов Цельсия = " + kelvin + " Кельвинов");
-        System.out.println(celsius + " Градусов Целсия = " + fahrenheit + " Фаренгейт");
+        System.out.println(celsius + " Градусов Цельсия  = " + kelvin + " Кельвинов");
+        System.out.println(celsius + " Градусов Целсия  = " + fahrenheit + " Фаренгейт");
     }
 }
