@@ -1,17 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        Playable.Player playing = new Playable.Player();
+        double celsius = 25.0;
 
-        // Відтворення
-        System.out.println("Проигрывание:");
-        playing.play();
-        playing.pause();
-        playing.stop();
+        double kelvin = ConverterTemperature.convertCelsiusToKelvin(celsius);
+        double fahrenheit = ConverterTemperature.convertCelsiusToFahrenheit(celsius);
 
-        // Запис
-        System.out.println("\nЗапись:");
-        playing.record();
-        playing.pause();
-        playing.stop();
+        System.out.println(celsius + " Градусов Цельсия = " + kelvin + " Кельвинов");
+        System.out.println(celsius + " Градусов Целсия = " + fahrenheit + " Фаренгейт");
     }
 }
