@@ -16,22 +16,11 @@ public class MyList {
         if (index >= 0 && index < data.size()) {
             return data.get(index);
         } else {
-            throw new IndexOutOfBoundsException("Такого индекса нет");
+            throw new IndexOutOfBoundsException("Индекса не наблюдается");
         }
     }
 
     public int getCount() {
         return data.size();
-    }
-
-    public static void main(String[] args) {
-        MyList myList = new MyList();
-
-        myList.addElement(10);
-        myList.addElement(20);
-        myList.addElement(30);
-
-        System.out.println("Елемент с индексом 1: " + myList.getElement(1));
-        System.out.println("Общее количество индексов: " + myList.getCount());
     }
 }

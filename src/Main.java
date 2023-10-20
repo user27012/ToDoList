@@ -1,9 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        Animals cat = Animals.MAVPA;
-        Animals dog = Animals.VOVK;
+        MyList myList = new MyList();
 
-        System.out.println(cat);
-        System.out.println(dog);
+        myList.addElement(10);
+        myList.addElement(20);
+        myList.addElement(30);
+
+        System.out.println("Елемент с индексом 1: " + myList.getElement(1));
+        System.out.println("Общее количество индексов: " + myList.getCount());
     }
 }
