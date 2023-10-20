@@ -6,6 +6,7 @@ public class Main {
         dictionary.Dobavit("Вчера было туманно");
         dictionary.Dobavit("Позавчера шел дождь");
 
+
         System.out.println(dictionary.getElement(0));
         System.out.println(dictionary.getElement(1));
         System.out.println(dictionary.getElement(2));
