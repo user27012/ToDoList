@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MyList {
-    private List<Integer> data;
+    private final List<Integer> data;
 
     public MyList() {
         data = new ArrayList<>();
@@ -19,6 +19,7 @@ public class MyList {
             throw new IndexOutOfBoundsException("Индекса не наблюдается");
         }
     }
+
 
     public int getCount() {
         return data.size();
